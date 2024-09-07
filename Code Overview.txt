@@ -1,0 +1,31 @@
+Code Overview :
+
+1. Libraries and Definitions: 
+-> The code includes necessary libraries for ESP8266, Blynk, DHT (for the DHT11 
+sensor), and LiquidCrystal_I2C (for the LCD). 
+-> Definitions are set for Blynk template ID, device name, authentication token, 
+and Wi-Fi credentials. 
+
+2. LCD Configuration: 
+-> The I2C LCD is configured with its address (0x27) and dimensions (16x2). 
+-> A custom character is defined for the degree symbol. 
+
+3. Blynk and Wi-Fi Configuration: 
+-> Blynk authentication token, Wi-Fi SSID, and Wi-Fi password are configured. 
+-> A BlynkTimer object is created for scheduling periodic tasks. 
+
+4. Sensor and Display Initialization in setup(): 
+-> Serial communication is initiated along with the Blynk connection, DHT sensor, 
+and timer for periodic sensor readings. 
+-> The LCD is initialized, and an introductory message is displayed. 
+
+5. Sensor Reading Function: 
+-> A function (sendSensor()) reads temperature, humidity, and gas values. 
+-> The values are sent to corresponding virtual pins on Blynk.
+
+6. Main Loop: 
+-> The main loop continuously runs Blynk and timer tasks. 
+-> Temperature and humidity are displayed on the LCD. 
+-> Gas value is checked, and whether the air is fresh or bad is displayed on the 
+LCD. 
+-> A Blynk event log is triggered if the gas value indicates bad air. 

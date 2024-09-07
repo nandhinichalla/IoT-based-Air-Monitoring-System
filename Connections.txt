@@ -1,0 +1,32 @@
+CONNECTIONS 
+
+1. Connect DHT11 Sensor to ESP8266: 
+-> Connect the VCC pin of the DHT11 to the 3.3V pin on the ESP8266. 
+-> Connect the GND pin of the DHT11 to the GND pin on the ESP8266. 
+-> Connect the data pin (out) of the DHT11 to, for example, GPIO pin D4 on the 
+ESP8266.
+ 
+2. Connect MQ-135 Gas Sensor to ESP8266: 
+-> Connect the VCC pin of the MQ-135 to the 5V pin on the ESP8266. 
+-> Connect the GND pin of the MQ-135 to the GND pin on the ESP8266. 
+-> Connect the analog output pin (AO) of the MQ-135 to, for example, analog 
+pin A0 on the ESP8266.
+ 
+3. Connect I2C LCD 16x2 Display to ESP8266: 
+-> Connect the VCC pin of the LCD to the 5V pin on the ESP8266. 
+-> Connect the GND pin of the LCD to the GND pin on the ESP8266. 
+-> Connect the SDA pin of the LCD to, for example, GPIO pin D2 on the ESP8266. 
+-> Connect the SCL pin of the LCD to, for example, GPIO pin D1 on the ESP8266. 
+
+4. Uploading the Code: 
+-> Connect the ESP8266 to your computer via USB. 
+-> Select the correct board and port in the Arduino IDE. 
+-> Upload the code to the ESP8266. 
+Ensure that the power requirements of the sensors (DHT11 and MQ-135) and the LCD 
+are met. 
+Double-check the pin configurations of your specific sensors, as they may vary. 
+Use jumper wires to establish connections between the components on the 
+breadboard. 
+Verify that the I2C address of your LCD matches the address in the code (0x27 is a 
+common default address). 
+Always power off the system before making or modifying connections. 

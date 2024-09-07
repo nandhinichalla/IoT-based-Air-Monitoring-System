@@ -1,0 +1,54 @@
+WORKING 
+
+1. Temperature and Humidity Monitoring: 
+-> Utilizes a DHT11 sensor to measure temperature and humidity in the 
+surrounding environment. 
+-> Displays the temperature in degrees Celsius on a 16x2 LCD with a 
+custom degree symbol. 
+-> Shows the humidity percentage on the same LCD display. 
+
+2. Air Quality Monitoring: 
+-> Incorporates an MQ-135 gas sensor to detect air quality based on the 
+concentration of certain gases in the environment. 
+-> The gas sensor readings are displayed on the LCD screen. 
+-> If the gas concentration exceeds a predefined threshold (600 in the 
+provided code), the LCD indicates "Bad Air." 
+
+3. Remote Monitoring with Blynk: 
+-> Integrates with the Blynk IoT platform for remote monitoring and 
+control. 
+-> Sends temperature, humidity, and gas values to the Blynk mobile app 
+in real-time. 
+-> Blynk app widgets visualize the data, allowing users to monitor air quality
+ from anywhere with an internet connection. 
+
+4. Alerts and Logging: 
+-> Generates an event log on the Blynk app in case of bad air quality, 
+triggering a pollution alert. 
+-> This provides a historical record of pollution events, aiding in analysis 
+and awareness. 
+
+5. LCD Display for Local Visualization: 
+-> The LCD screen serves as a local interface for immediate visual 
+feedback on environmental conditions. 
+-> It displays key information such as temperature, humidity, and air 
+quality status. 
+
+6. Customizable Thresholds and Configurations: 
+-> The code includes threshold values that can be adjusted based on 
+specific air quality standards or project requirements. 
+-> Users can customize the code and configurations to suit their 
+environmental monitoring needs. 
+
+7. Continuous Monitoring and Timed Readings: 
+-> The system continuously monitors environmental parameters using a 
+BlynkTimer for timed sensor readings. 
+-> Regular updates ensure that users have access to up-to-date 
+information on temperature, humidity, and air quality. 
+
+In summary, the project provides a comprehensive solution for monitoring and 
+visualizing key environmental parameters, offering both local and remote access to 
+real-time data. It is suitable for applications where awareness of indoor or outdoor air 
+quality is essential, such as smart home systems, environmental monitoring, or 
+workplace safety initiatives. 
+
